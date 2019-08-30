@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+import Counter from './components/counter';
+import 'bootstrap/dist/bootstrap.css';
+
 
 class App extends Component {
   constructor() {
@@ -23,4 +26,4 @@ class App extends Component {
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<Counter />, document.getElementById('counter'));
