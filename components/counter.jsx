@@ -5,21 +5,26 @@ state = {
 count: 0,
 imageUrl: "https://picsum.photos/200"
 };
+//  <img src={this.state.imageUrl} alt="my land"/>
+
+styles= {
+fontSize: 15,
+fontWeight: "bold"
+};
 
   render() {
     return( 
     <div>
-    <img src={this.state.imageUrl} alt="my land"/>
-    <h1>{this.formatCount()}</h1>
-    <button className="badge badge-primary m-2">Increment</button>
+   
+    <h1 style={this.styles} className="badge badge-warning m-2">{this.formatCount()}</h1>
+    <button className="btn btn-info btn-sm">Increment</button>
     </div>
     );
   }
 
 formatCount(){
   const {count } = this.state;
-
-  return this.state.count === 0 ? 'Zero' : this.state.count;
+  return this.state.count === 0 ? 'Zero' : count;
 }
 
 }

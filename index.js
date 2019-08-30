@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 import Counter from './components/counter';
-import 'bootstrap/dist/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 class App extends Component {
