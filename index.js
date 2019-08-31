@@ -27,6 +27,6 @@ class App extends Component {
   }
 }
 
-render(<Counter />, document.getElementById('counter'));
+// render(<Counter />, document.getElementById('counter'));
 
 render(<Counters />, document.getElementById('counters'));
