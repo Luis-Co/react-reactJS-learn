@@ -11,6 +11,10 @@ counters: [
 ]    
   };
 
+handleDelete = () => {
+
+};
+
   render (){
     return (
       <div>

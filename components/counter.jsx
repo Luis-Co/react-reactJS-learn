@@ -30,6 +30,7 @@ handleIncrement =()=>{
     {this.props.children}
     <h1 style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</h1>
     <button onClick={() => this.handleIncrement()} className="btn btn-info btn-sm">Incrementar</button>
+    <button onClick={() => this.props.onDelete()} className="btn btn-danger btn-sm m-2">Borrar</button>
     {this.renderTags()}
     </div>
     );
