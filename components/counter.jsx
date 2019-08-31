@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 class Counter extends Component {
 state = {
 count: 0,
-imageUrl: "https://picsum.photos/200"
+imageUrl: "https://picsum.photos/200",
+mytags: ['tag1','tag2','tag3']
 };
 //  <img src={this.state.imageUrl} alt="my land"/>
 
@@ -12,11 +13,18 @@ fontSize: 15,
 fontWeight: "bold"
 };
 
+renderTags(){
+  if (this.state.mytags.length=== 0) return <p>No hay tags!</p>;
+
+  return <ul>{this.state.mytags.map(tag => <li key={tag}>{tag}</li>)}</ul>
+}
+
   render() {
     return( 
     <div>   
     <h1 style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</h1>
     <button className="btn btn-info btn-sm">Incrementar</button>
+    {this.renderTags()}
     </div>
     );
   }
