@@ -19,11 +19,15 @@ renderTags(){
   return <ul>{this.state.mytags.map(tag => <li key={tag}>{tag}</li>)}</ul>
 }
 
+handleIncrement =()=>{
+  console.log("Increment Clicked",this);
+}
+
   render() {
     return( 
     <div>   
     <h1 style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</h1>
-    <button className="btn btn-info btn-sm">Incrementar</button>
+    <button onClick={this.handleIncrement()} className="btn btn-info btn-sm">Incrementar</button>
     {this.renderTags()}
     </div>
     );
