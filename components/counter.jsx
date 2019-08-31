@@ -13,15 +13,18 @@ fontWeight: "bold"
 };
 
   render() {
-const classes = 'badge m-2 badge-';
-classes += (this.state.count === 0) ? "warning" : "primary";
-
     return( 
     <div>   
-    <h1 style={this.styles} className={classes}>{this.formatCount()}</h1>
+    <h1 style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</h1>
     <button className="btn btn-info btn-sm">Incrementar</button>
     </div>
     );
+  }
+
+  getBadgeClasses(){
+    const classes = 'badge m-2 badge-';
+classes += (this.state.count === 0) ? "warning" : "primary";
+return classes;
   }
 
 formatCount(){
