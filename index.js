@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 import Counter from './components/counter';
+import Counters from './components/counters';
 import 'bootstrap/dist/css/bootstrap.css';
 
 //this is the principal component...but i am not rendering it at all...its name it is App
