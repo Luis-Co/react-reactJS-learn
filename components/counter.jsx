@@ -15,15 +15,12 @@ fontWeight: "bold"
 
 renderTags(){
   if (this.state.mytags.length === 0) return <p>No hay tags!</p>;
-
   return <ul>{this.state.mytags.map(tag => <li key={tag}>{tag}</li>)}</ul>
 };
 
 //en vez de usar un constructor para ver el Handle las properties pues usamos la arrow
 //cuando se usa el arrow en la función pues en el llamado también se debe de usar el arrow, es decir, en el onclick
 handleIncrement =()=>{
-  // this.state.count + 1;
-  // this.setState()
   this.setState({ count: this.state.count + 1 });
 };
 
