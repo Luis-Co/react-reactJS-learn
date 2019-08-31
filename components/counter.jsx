@@ -19,7 +19,7 @@ classes += (this.state.count === 0) ? "warning" : "primary";
     return( 
     <div>   
     <h1 style={this.styles} className={classes}>{this.formatCount()}</h1>
-    <button className="btn btn-info btn-sm">Increment</button>
+    <button className="btn btn-info btn-sm">Incrementar</button>
     </div>
     );
   }
